@@ -22,7 +22,7 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-require("./routes/apiRoutes")(app);
+//require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Serve up static assets (usually on heroku)
