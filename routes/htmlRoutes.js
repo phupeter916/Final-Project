@@ -3,7 +3,7 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
+  app.get("/kaan/test", function(req, res) {
     db.homecontrols.findAll({}).then(function(dbhome) {
       res.render("login", {
         msg: "Welcome!",
@@ -21,7 +21,7 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/login", function(req, res){
+  app.get("/loginkaan/test", function(req, res){
     res.render("login");
   });
 
